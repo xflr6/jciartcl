@@ -18,8 +18,8 @@
 % This work consists of the file jciartcl.cls.
 
 % class metadata
-\NeedsTeXFormat{LaTeX2e}[2001/04/21]
-\ProvidesClass{jciartcl}[2016/05/01 v1.0 Journal of Constraint Interaction article class]
+\NeedsTeXFormat{LaTeX2e}[2001/06/01]
+\ProvidesClass{jciartcl}[2016/04/21 v1.0 Journal of Constraint Interaction article class]
 
 % class options
 \RequirePackage{kvoptions}
