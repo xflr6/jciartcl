@@ -1,0 +1,50 @@
+\documentclass[startpage=1,last]{../jciartcl}
+
+\author{Donald E.\ Knuth \& Leslie Lamport}
+\title{On typesetting beautiful journal articles}
+\acknowledgements{\blindtext}
+
+% examples
+\usepackage{linguex}
+\renewcommand{\firstrefdash}{}
+
+% lorem
+\usepackage{blindtext}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\blindtext
+\end{abstract}
+
+
+\section{Introduction}\label{sec:intro}
+
+\blindtext
+
+\ex.
+	\a. I will not buy this record, it is scratched.
+	\b. My hovercraft is full of eels.
+
+
+\blindtext\footnote{\blindtext}
+
+
+\section{Using the \LaTeX document preparation system}\label{sec:latex}
+
+\Blindtext
+
+
+\section{Conclusion}\label{sec:concl}
+
+\blindtext
+
+
+\nocite{*}
+\bibliographystyle{../unified}
+\bibliography{knuth_lamport}
+
+\end{document}

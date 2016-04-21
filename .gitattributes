@@ -1,0 +1,4 @@
+*.bib text eol=lf
+*.bst text eol=lf
+*.cls text eol=lf
+*.tex text eol=lf
