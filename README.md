@@ -108,7 +108,7 @@ On Ubuntu, for example, the following should suffice:
 
 ```sh
 $ sudo apt-get install python python-pip
-$ sudo pip install latexpages
+$ sudo -H pip install latexpages
 $ sudo apt-get install texlive texlive-fonts-extra texlive-humanities latexmk pdftk
 ```
 
@@ -155,6 +155,9 @@ and update their start pages and the table of contents accordingly. Rerun
 `latexpages` once again to update the result, which is written to the `_output`
 directory.
 
+See the [latexpages] documentation for more details on the `latexpagex.ini`
+settings and the command line interface.
+
 
 Bundled files
 -------------
@@ -169,6 +172,7 @@ Further reading
 
 - http://www.ctan.org/pkg/koma-script
 - http://www.ctan.org/pkg/geometry
+- http://www.ctan.org/pkg/pdfpages
 - http://www.ctan.org/pkg/crop
 - http://www.ctan.org/pkg/libertine
 - http://www.ctan.org/pkg/microtype
@@ -178,6 +182,13 @@ Further reading
 - http://www.ctan.org/pkg/doclicense
 - http://www.ctan.org/pkg/natbib
 - http://www.ctan.org/pkg/linguex
+
+
+See also
+--------
+
+- http://www.ctan.org/topic/journalpub
+- http://www.ctan.org/topic/compilation
 
 
 Changelog
