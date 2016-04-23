@@ -107,9 +107,9 @@ combining the individual articles of an issue can be automatized with
 On Ubuntu, for example, the following should suffice:
 
 ```sh
-$ sudo apt-get install python python-pip
+$ sudo apt install python python-pip
 $ sudo -H pip install latexpages
-$ sudo apt-get install texlive texlive-fonts-extra texlive-humanities latexmk pdftk
+$ sudo apt install texlive texlive-fonts-extra texlive-humanities latexmk pdftk
 ```
 
 Download the ZIP-file or tarball of the latest [jciartcl release], extract it,
