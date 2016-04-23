@@ -132,9 +132,22 @@ jci42/
 
 Edit the articles so that they all use the central `jciartcl.cls` and
 `unified.bst` from their parent directory.
-Add a dummy start page with the `startpage` class option to be updated later (`\documentclass[startpage=1]{../jciartcl}` and
-`\bibliographystyle{../unified}`, for the last article add the `last` option:
-`\documentclass[startpage=1,last]{../jciartcl}`).
+Add a dummy start page with the `startpage` class option to be updated by
+`latexpages-paginate`:
+
+```latex
+\documentclass[startpage=1]{../jciartcl}
+...
+\bibliographystyle{../unified}
+...
+```
+
+For the last article, append the `last` option:
+
+```latex
+\documentclass[startpage=1,last]{../jciartcl}
+...
+```
 
 Edit `latexpagex.ini`. In the `[parts]` section, `mainmatter` defines the
 article directories for compilation and combination (and their order):
