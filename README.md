@@ -46,7 +46,7 @@ uncomment and fill the `\acknowledgements{}` command.
 
 To include an abstract, uncomment and fill the `abstract`-enviroment.
 
-See the `knuth_lamport` directory for a mininal example.
+See the `knuth_lamport/` [directory] for a mininal example.
 
 
 Options
@@ -223,4 +223,5 @@ Jciartcl is distributed under the [LaTeX Project Public License].
 [latexmk]: http://users.phys.psu.edu/~collins/software/latexmk-jcc/
 [pdftk]: http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/
 [jciartcl release]: http://github.com/xflr6/jciartcl/releases
+[directory]: http://github.com/xflr6/jciartcl/tree/master/knuth_lamport
 [LaTeX Project Public License]: http://www.latex-project.org/lppl.txt
