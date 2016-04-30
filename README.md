@@ -101,7 +101,7 @@ combining the individual articles of an issue can be automatized with
 
 - [Python] 2.7 or 3.3+
 - [latexpages] 0.5.1 or later (installable via `pip install latexpages`)
-- either [TeX Live] or [MikTeX], with the former also [latexmk]
+- either [TeX Live] and [latexmk] or [MikTeX]
 - [pdftk][] (for page number computations)
 
 On Ubuntu, for example, the following should suffice:
