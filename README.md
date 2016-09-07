@@ -100,16 +100,17 @@ combining the individual articles of an issue can be automatized with
 **Requirements**:
 
 - [Python] 2.7 or 3.3+
-- [latexpages] 0.5.1 or later (installable via `pip install latexpages`)
+- [latexpages] 0.6 or later (installable via `pip install latexpages`)
 - either [TeX Live] and [latexmk] or [MikTeX]
-- [pdftk][] (for page number computations)
+- either `pdfinfo` ([poppler]-utils, [miktex-poppler-bin], [xpdf]) or [pdftk][]
+  (for page number computations)
 
 On Ubuntu, for example, the following should suffice:
 
 ```sh
 $ sudo apt install python python-pip
 $ sudo -H pip install latexpages
-$ sudo apt install texlive texlive-fonts-extra texlive-humanities latexmk pdftk
+$ sudo apt install texlive texlive-fonts-extra texlive-humanities latexmk poppler-utils
 ```
 
 Download the ZIP-file or tarball of the latest [jciartcl release], extract it,
@@ -209,6 +210,8 @@ Changelog
 
 Version 1.0: Initial release.
 
+Version 1.1: Bump `latexpages` dependency to 0.6 favoring poppler over ptftk.
+
 
 License
 -------
@@ -221,6 +224,9 @@ Jciartcl is distributed under the [LaTeX Project Public License].
 [TeX Live]: http://www.tug.org/texlive/
 [MikTeX]: http://miktex.org
 [latexmk]: http://users.phys.psu.edu/~collins/software/latexmk-jcc/
+[poppler]: http://poppler.freedesktop.org
+[miktex-poppler-bin]: http://www.ctan.org/search/?phrase=miktex-poppler-bin&ext=true&FILES=on
+[xpdf]: http://www.foolabs.com/xpdf/
 [pdftk]: http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/
 [jciartcl release]: http://github.com/xflr6/jciartcl/releases
 [directory]: http://github.com/xflr6/jciartcl/tree/master/knuth_lamport
