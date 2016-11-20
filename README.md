@@ -208,9 +208,9 @@ See also
 Changelog
 ---------
 
-Version 1.0: Initial release.
-
 Version 1.1: Bump `latexpages` dependency to 0.6 favoring poppler over ptftk.
+
+Version 1.0: Initial release.
 
 
 License
