@@ -8,9 +8,9 @@ Journal of Constraint Interaction.
 Links
 -----
 
-- GitHub: http://github.com/xflr6/jciartcl
-- Download: http://github.com/xflr6/jciartcl/releases
-- Issue Tracker: http://github.com/xflr6/jciartcl/issues
+- GitHub: https://github.com/xflr6/jciartcl
+- Download: https://github.com/xflr6/jciartcl/releases
+- Issue Tracker: https://github.com/xflr6/jciartcl/issues
 
 
 Quickstart
@@ -184,25 +184,25 @@ This bundle contains the following third-party files:
 Further reading
 ---------------
 
-- http://www.ctan.org/pkg/koma-script
-- http://www.ctan.org/pkg/geometry
-- http://www.ctan.org/pkg/pdfpages
-- http://www.ctan.org/pkg/crop
-- http://www.ctan.org/pkg/libertine
-- http://www.ctan.org/pkg/microtype
-- http://www.ctan.org/pkg/hyperref
-- http://www.ctan.org/pkg/textpos
-- http://www.ctan.org/pkg/lastpage
-- http://www.ctan.org/pkg/doclicense
-- http://www.ctan.org/pkg/natbib
-- http://www.ctan.org/pkg/linguex
+- https://www.ctan.org/pkg/koma-script
+- https://www.ctan.org/pkg/geometry
+- https://www.ctan.org/pkg/pdfpages
+- https://www.ctan.org/pkg/crop
+- https://www.ctan.org/pkg/libertine
+- https://www.ctan.org/pkg/microtype
+- https://www.ctan.org/pkg/hyperref
+- https://www.ctan.org/pkg/textpos
+- https://www.ctan.org/pkg/lastpage
+- https://www.ctan.org/pkg/doclicense
+- https://www.ctan.org/pkg/natbib
+- https://www.ctan.org/pkg/linguex
 
 
 See also
 --------
 
-- http://www.ctan.org/topic/journalpub
-- http://www.ctan.org/topic/compilation
+- https://www.ctan.org/topic/journalpub
+- https://www.ctan.org/topic/compilation
 
 
 Changelog
@@ -219,15 +219,15 @@ License
 Jciartcl is distributed under the [LaTeX Project Public License].
 
 
-[Python]: http://www.python.org
-[latexpages]: http://pypi.python.org/pypi/latexpages
-[TeX Live]: http://www.tug.org/texlive/
-[MikTeX]: http://miktex.org
-[latexmk]: http://users.phys.psu.edu/~collins/software/latexmk-jcc/
-[poppler]: http://poppler.freedesktop.org
-[miktex-poppler-bin]: http://www.ctan.org/search/?phrase=miktex-poppler-bin&ext=true&FILES=on
+[Python]: https://www.python.org
+[latexpages]: https://pypi.python.org/pypi/latexpages
+[TeX Live]: https://www.tug.org/texlive/
+[MikTeX]: https://miktex.org
+[latexmk]: http://personal.psu.edu/jcc8/software/latexmk-jcc/
+[poppler]: https://poppler.freedesktop.org
+[miktex-poppler-bin]: https://www.ctan.org/search/?phrase=miktex-poppler-bin&ext=true&FILES=on
 [xpdf]: http://www.foolabs.com/xpdf/
-[pdftk]: http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/
-[jciartcl release]: http://github.com/xflr6/jciartcl/releases
-[directory]: http://github.com/xflr6/jciartcl/tree/master/knuth_lamport
-[LaTeX Project Public License]: http://www.latex-project.org/lppl.txt
+[pdftk]: https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/
+[jciartcl release]: https://github.com/xflr6/jciartcl/releases
+[directory]: https://github.com/xflr6/jciartcl/tree/master/knuth_lamport
+[LaTeX Project Public License]: https://www.latex-project.org/lppl.txt
