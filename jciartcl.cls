@@ -19,7 +19,7 @@
 
 % class metadata
 \NeedsTeXFormat{LaTeX2e}[2001/06/01]
-\ProvidesClass{jciartcl}[2016/04/21 v1.0 Journal of Constraint Interaction article class]
+\ProvidesClass{jciartcl}[2016/09/07 v1.1 Journal of Constraint Interaction article class]
 
 % class options
 \RequirePackage{kvoptions}
