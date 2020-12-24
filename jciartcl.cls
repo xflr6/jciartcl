@@ -19,7 +19,7 @@
 
 % class metadata
 \NeedsTeXFormat{LaTeX2e}[2001/06/01]
-\ProvidesClass{jciartcl}[2016/09/07 v1.1 Journal of Constraint Interaction article class]
+\ProvidesClass{jciartcl}[2020/12/24 v1.2 Journal of Constraint Interaction article class]
 
 % class options
 \RequirePackage{kvoptions}
@@ -116,9 +116,9 @@
 \renewcommand*{\othersectionlevelsformat}[3]{#3\autodot\quad}
 
 % page head
-\RequirePackage{scrpage2}
+\RequirePackage{scrlayer-scrpage}
 	\pagestyle{scrheadings}
-	\clearscrheadfoot
+	\clearpairofpagestyles
 \RequirePackage{calc}
 \AtBeginDocument{%
 	\@ifundefined{@ceheading}{\let\@ceheading\@author}{}
