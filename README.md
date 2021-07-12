@@ -1,7 +1,7 @@
 jciartcl
 ========
 
-[![Build](https://github.com/xflr6/jciartcl/actions/workflows/build.yaml/badge.svg)](https://github.com/xflr6/jciartcl/actions/workflows/build.yaml?query=branch%3Amaster)
+[![Build](https://github.com/xflr6/jciartcl/actions/workflows/build.yaml/badge.svg?branch=master)](https://github.com/xflr6/jciartcl/actions/workflows/build.yaml?query=branch%3Amaster)
 
 LaTeX document class and issue skeleton for typesetting articles for the
 Journal of Constraint Interaction.
