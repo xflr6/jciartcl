@@ -27,8 +27,12 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-      - name: Install system dependencies
-        run: sudo apt install texlive texlive-fonts-extra texlive-humanities latexmk poppler-utils
+      - name: Apt install system dependencies
+        run: |
+          echo ::group::Run sudo apt-get update; sudo apt-get update; echo ::endgroup::
+          echo ::group::Run sudo apt-get install texlive texlive-fonts-extra texlive-humanities latexmk;
+          sudo apt-get install texlive texlive-fonts-extra texlive-humanities latexmk;
+          echo ::endgroup::
       - name: Setup Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
         with:
