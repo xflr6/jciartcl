@@ -25,18 +25,22 @@ jobs:
             python-version: "3.6"
             os: ubuntu-latest
     steps:
-      - name: Install system dependencies
-        run: sudo apt install texlive texlive-fonts-extra texlive-humanities latexmk poppler-utils
       - name: Checkout repo
         uses: actions/checkout@v2
+      - name: Install system dependencies
+        run: sudo apt install texlive texlive-fonts-extra texlive-humanities latexmk poppler-utils
       - name: Setup Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Upgrade pip
-        run: python -m pip install --upgrade pip setuptools wheel
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - name: Pip install dependencies
+        run: |
+          echo ::group::Run python -m pip install --upgrade pip setuptools wheel
+          python -m pip install --upgrade pip setuptools wheel
+          echo ::endgroup::
+          echo ::group::Run pip install -r requirements.txt
+          pip install -r requirements.txt
+          echo ::endgroup::
       - name: Run tests
         run: latexpages
         env:
