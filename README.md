@@ -101,7 +101,7 @@ combining the individual articles of an issue can be automatized with
 
 **Requirements**:
 
-- [Python] 3.8+
+- [Python] 3.9+
 - [latexpages] 0.6 or later (installable via `pip install latexpages`)
 - either [TeX Live] and [latexmk] or [MikTeX]
 - either `pdfinfo` ([poppler]-utils, [miktex-poppler-bin], [xpdf]) or [pdftk][]
