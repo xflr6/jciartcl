@@ -1,32 +1,21 @@
 name: Build
-on:
-  - push
-  - pull_request
+on: [push, pull_request]
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
+    name: run-tests (${{ matrix.os || 'linux' }}-${{ matrix.python-version }})
+    runs-on: ${{ matrix.os || 'ubuntu' }}-latest
     strategy:
       fail-fast: false
       matrix:
         include:
-          - name: linux-3.14
-            python-version: "3.14"
-            os: ubuntu-latest
-          - name: linux-3.13
-            python-version: "3.13"
-            os: ubuntu-latest
-          - name: linux-3.12
-            python-version: "3.12"
-            os: ubuntu-latest
-          - name: linux-3.11
-            python-version: "3.11"
-            os: ubuntu-latest
-          - name: linux-3.10
-            python-version: "3.10"
-            os: ubuntu-latest
+          - python-version: "3.14"
+          - python-version: "3.13"
+          - python-version: "3.12"
+          - python-version: "3.11"
+          - python-version: "3.10"
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - name: Checkout source repo
+        uses: actions/checkout@v6
       - name: Apt install system dependencies
         run: |
           echo "::group::Run sudo apt-get update"
@@ -36,7 +25,7 @@ jobs:
           sudo apt-get install texlive texlive-fonts-extra texlive-humanities latexmk
           echo "::endgroup::"
       - name: Setup Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
       - name: Pip install dependencies
@@ -51,8 +40,8 @@ jobs:
         run: latexpages
         env:
           TEXINPUTS: ".:..:"
-      - name: Upload artifacts ${{ matrix.name }}
-        uses: actions/upload-artifact@v4
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v6
         with:
-          name: ${{ matrix.name }}
+          name: ${{ matrix.os || 'linux' }}-${{ matrix.python-version }}
           path: _output/*.pdf
