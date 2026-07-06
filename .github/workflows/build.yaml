@@ -15,7 +15,7 @@ jobs:
           - python-version: "3.10"
     steps:
       - name: Checkout source repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Apt install system dependencies
         run: |
           echo "::group::Run sudo apt-get update"
@@ -41,7 +41,7 @@ jobs:
         env:
           TEXINPUTS: ".:..:"
       - name: Upload artifacts
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ matrix.os || 'linux' }}-${{ matrix.python-version }}
           path: _output/*.pdf
